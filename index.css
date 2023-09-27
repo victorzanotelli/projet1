@@ -1,0 +1,86 @@
+/* -------------------initialisation-------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --fond-de-cite: #E8E9EB;
+    --font-title: 'Roboto Slab', serif;
+    --font-text: 'Roboto Slab', sans-serif;
+    --color-size-text: 1rem;
+    --color-font: #000000ef;
+    --color-nav-bar: #3460B1;
+    --font-weight-title: 600;
+    --font-weight-text: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--fond-de-cite);
+    width: 100%;
+}
+
+/* --------------------------------------infocontact ------------------------*/
+.description {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.info {
+    width: 95%;
+    height: auto;
+    font-family: var(--font_text);
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(42, 42, 42, 0.33);
+    font-style: normal;
+    font-weight: var(--font-weight-title);
+    line-height: 125%;
+    padding: 1rem;
+}
+
+.line {
+    width: 70%;
+    height: 2px;
+    background: var(--color-nav-bar);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--font-text);
+    width: 95%;
+    height: auto;
+    font-weight: var(--font-weight-text);
+    color: var(--color-font);
+}
+
+div p {
+    display: grid;
+    padding: 2%;
+    line-height: 1.5rem;
+}
+
+.semi-title {
+    font-weight: var(--font-weight-title);
+    line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15%);
+}
+
+.fa-brands {
+    display: grid;
+    width: 50%;
+    justify-items: center;
+    align-self: center;
+    }
