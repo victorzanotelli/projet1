@@ -79,8 +79,40 @@ img {
 }
 
 .fa-brands {
-    display: grid;
-    width: 50%;
-    justify-items: center;
-    align-self: center;
+    padding: 25%;
+    text-align: center;
+}
+
+/* -------------------media queries pour + 900 px--------------------- */
+@media screen and (min-width=780px) {
+    .description {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
+
+    .info {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: auto;
+    }
+
+    .line {
+        width: 10%;
+        height: 2px;
+        background: var(--color-nav-bar);
+    }
+
+    .contact {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+
+        img {
+            display: grid;
+            grid-column-start: 3;
+            grid-column-end: 6;
+        }
+    }
+}
