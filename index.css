@@ -21,14 +21,14 @@
 
 /* --------------------------------------infocontact ------------------------*/
 .description {
-    display: flex;
+    display: grid;
     width: 100%;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
+    height: auto;
+    grid-auto-rows: minmax(10px, auto)
 }
 
 .info {
+    display: grid;
     width: 95%;
     height: auto;
     font-family: var(--font_text);
@@ -45,6 +45,8 @@
     width: 70%;
     height: 2px;
     background: var(--color-nav-bar);
+    justify-self: center;
+    align-self: center;
 }
 
 .contact {
@@ -55,6 +57,7 @@
     height: auto;
     font-weight: var(--font-weight-text);
     color: var(--color-font);
+    padding: 1.25rem
 }
 
 div p {
@@ -83,36 +86,54 @@ img {
     text-align: center;
 }
 
-/* -------------------media queries pour + 900 px--------------------- */
-@media screen and (min-width=780px) {
+/* -------------------media queries pour + 780 px--------------------- */
+@media screen and (min-width:780px) {
     .description {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+
 
     .info {
         display: grid;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
         width: auto;
     }
 
     .line {
-        width: 10%;
-        height: 2px;
-        background: var(--color-nav-bar);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
     .contact {
         grid-column-start: 1;
-        grid-column-end: 3;
-
-
-        img {
-            display: grid;
-            grid-column-start: 3;
-            grid-column-end: 6;
-        }
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
-}
+
+    img {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        border-radius: 0 50%;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .logo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .fa-brands {
+        padding: 25%;
+        text-align: center;
+    }
+   }
