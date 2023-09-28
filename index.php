@@ -81,10 +81,11 @@ $experience = [
 <div class="date">
     <?php echo $experience[$i]['date']?>
 </div>
-<div class="whatIDo">
-<?php echo $experience[$i]['whatIdo']?>
-<p class="learnmore">En savoir plus...</p>
-</div>
+<button class="learnmore">En savoir plus...</button>
+     <div class="whatIDo cache">
+     <?php echo $experience[$i]['whatIdo']?>
+     </div>
+     <script src="script.js"></script>
 </div>
 </div>
 <?php endfor ?>

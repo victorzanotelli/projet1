@@ -16,7 +16,8 @@
     margin: 0;
     padding: 0;
     background-color: var(--fond-de-cite);
-    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* --------------------------------------infocontact ------------------------*/
@@ -101,6 +102,7 @@ h2{
     font-weight: var(--font-weight-title);
     font-size: 2rem;
 }
+
 .experience {
     text-align: center;
     font-family: var(--font-text);
@@ -109,38 +111,35 @@ h2{
     margin: 1rem;
     width: 95%;
 }
+
 .job {
     padding: 0.5rem 0;
 }
+
+.companyCity{
+    padding: 0.5rem 0;
+}
+
 .date {
     padding: 0.5rem 0;
 }
+
 .whatIDo {
+    display: none;
     padding: 0.5rem 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.learnmore {
+    display: inline-block;
+    font-size: 0.75rem;
+    border: none;
+}
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
     .description {
         grid-template-columns: 1fr 1fr;
     }
-
 
     .info {
         display: grid;
