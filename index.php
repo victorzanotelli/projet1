@@ -26,7 +26,7 @@ $experience = [
 // ------------------------------------------------------html--------------------------------------------------------------
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -81,15 +81,15 @@ $experience = [
 <div class="date">
     <?php echo $experience[$i]['date']?>
 </div>
-<button class="learnmore">En savoir plus...</button>
-     <div class="whatIDo cache">
+<div class="whatIDo">
      <?php echo $experience[$i]['whatIdo']?>
      </div>
-     <script src="script.js"></script>
-</div>
+     <button class="learnmore">En savoir plus...</button>
+    </div>
 </div>
 <?php endfor ?>
     </main>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 </html>

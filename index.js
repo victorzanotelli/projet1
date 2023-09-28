@@ -1,10 +1,15 @@
-const buttonShow = document.querySelector(".learnmore");
-const answer = document.querySelector(".whatIDo")
-const clickButton = function () {
-    if (answer.classList.toggle(".cache")) {
-        buttonShow.textContent = "En savoir plus...";
-    } else {
-        buttonShow.textContent = "ok";
-    }
-};
-buttonShow.addEventListener("click", clickButton);
+let whatIDo = document.querySelectorAll(".whatIDo");
+let btnText = document.querySelectorAll(".learnmore");
+
+for(let i = 0; i < whatIDo.length; i++) {
+    btnText[i].addEventListener('click', () => {
+        if (whatIDo[i].style.display === "inline") {
+            btnText[i].innerHTML = "En savoir plus...";
+            whatIDo[i].style.display = "none";
+        } else {
+            btnText[i].innerHTML = "moins...";
+            whatIDo[i].style.display = "inline";
+        }
+    })
+}
+

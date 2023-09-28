@@ -96,7 +96,7 @@ img {
     justify-content: center;
 }
 
-h2{
+h2 {
     text-align: center;
     font-family: var(--font-title);
     font-weight: var(--font-weight-title);
@@ -116,7 +116,7 @@ h2{
     padding: 0.5rem 0;
 }
 
-.companyCity{
+.companyCity {
     padding: 0.5rem 0;
 }
 
@@ -124,16 +124,17 @@ h2{
     padding: 0.5rem 0;
 }
 
-.whatIDo {
-    display: none;
-    padding: 0.5rem 0;
-}
+
 
 .learnmore {
     display: inline-block;
     font-size: 0.75rem;
-    border: none;
+  }
+
+.whatIDo {
+    display: none;
 }
+
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
@@ -181,9 +182,10 @@ h2{
         grid-row-start: 4;
         grid-row-end: 5;
     }
+
     .fa-brands {
         padding: 25%;
         text-align: center;
         font-size: 2rem;
     }
-   }
+}
