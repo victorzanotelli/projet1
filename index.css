@@ -86,6 +86,55 @@ img {
     text-align: center;
 }
 
+/* ----------------------------------------Experience---------------------------------------------------------  */
+.experience-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title);
+    font-size: 2rem;
+}
+.experience {
+    text-align: center;
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-text);
+    font-size: 1.5rem;
+    margin: 1rem;
+    width: 95%;
+}
+.job {
+    padding: 0.5rem 0;
+}
+.date {
+    padding: 0.5rem 0;
+}
+.whatIDo {
+    padding: 0.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
     .description {

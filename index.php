@@ -1,3 +1,30 @@
+<!-- ------------------------------------php-------------------------------------------------------- -->
+<?php
+$experience = [
+    [
+        'job' => 'Devellopeur Web Full Stack - JS, PHP',
+        'company' => 'CBD',
+        'city' => 'Lyon, France',
+        'date' => 'depuis Septembre 2022',
+        'whatIdo' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!',
+    ],
+    [
+        'job' => 'Devellopeur Web Front-End Senior - JS',
+        'company' => 'MOF',
+        'city' => 'Lyon, France',
+        'date' => 'Février 2021 - Septembre 2022',
+        'whatIdo' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!',
+    ],
+    [
+        'job' => 'Assistant Back-End - PHP',
+        'company' => 'Le Karma',
+        'city' => 'Lyon, France',
+        'date' => 'Septembre 2020 - Février 2021',
+        'whatIdo' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!',
+    ],
+]
+// ------------------------------------------------------html--------------------------------------------------------------
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,13 +68,27 @@
         </div>
 
         <!-- ---------------------------------Experience---------------------------------------------------- -->
-<div class="experience">
-
-</div>
+<div class="experience-container">
 <h2>EXPERIENCE</h2>
-
+<?php for ($i=0; $i < (count($experience)); $i++): ?>
+<div class="experience">
+<div class="job">
+    <?php echo $experience[$i]['job']?>
+</div>
+<div class="companyCity">
+    <?php echo $experience[$i]['company'] . "|" . $experience[$i]['city'] ?>
+</div>
+<div class="date">
+    <?php echo $experience[$i]['date']?>
+</div>
+<div class="whatIDo">
+<?php echo $experience[$i]['whatIdo']?>
+<p class="learnmore">En savoir plus...</p>
+</div>
+</div>
+</div>
+<?php endfor ?>
     </main>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
-
 </html>
