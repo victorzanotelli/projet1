@@ -89,6 +89,42 @@ $experience = [
 </div>
 <?php endfor ?>
     </main>
+    <!-- ---------------------------------softskills---------------------------------------------------- -->
+    <h2>Soft skills</h2>
+    <div class="softskills">
+        <div id="Gestion" class="skill">Gestion du temps</div>
+        <div id="Curiosité" class="skill">Curiosité</div>
+        <div id="Travail" class="skill">Travail d'équipe</div>
+        <div ID="Adaptabilié" class="skill">Adaptabilié</div>
+        <div class="bar1">
+            <div class="b11"></div>
+            <div class="b12"></div>
+            <div class="b13"></div>
+            <div class="b14"></div>
+            <div class="b15"></div>
+        </div>
+        <div class="bar2">
+            <div class="b21"></div>
+            <div class="b22"></div>
+            <div class="b23"></div>
+            <div class="b24"></div>
+            <div class="b25"></div>
+        </div>
+        <div class="bar3">
+            <div class="b31"></div>
+            <div class="b32"></div>
+            <div class="b33"></div>
+            <div class="b34"></div>
+            <div class="b35"></div>
+        </div>
+        <div class="bar4">
+            <div class="b41"></div>
+            <div class="b42"></div>
+            <div class="b43"></div>
+            <div class="b44"></div>
+            <div class="b45"></div>
+        </div>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
