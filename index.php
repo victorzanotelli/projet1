@@ -88,6 +88,34 @@ $references = [
 
         <!-- ---------------------------------Experience---------------------------------------------------- -->
 <div class="experience-container">
+<<<<<<< HEAD
+    <h2>EXPERIENCE</h2>
+    <div class="carousel">
+        <?php for ($i = 0; $i < count($experience); $i++): ?>
+            <div class="experience">
+                <div class="job">
+                    <?php echo $experience[$i]['job'] ?>
+                </div>
+                <div class="companyCity">
+                    <?php echo $experience[$i]['company'] . " | " . $experience[$i]['city'] ?>
+                </div>
+                <div class="date">
+                    <?php echo $experience[$i]['date'] ?>
+                </div>
+                <div class="whatIDo">
+                    <?php echo $experience[$i]['whatIdo'] ?>
+                </div>
+                <button class="learnmore">En savoir plus...</button>
+            </div>
+        <?php endfor ?>
+    </div>
+    <div class="carousel-buttons">
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
+    </div>
+</div>
+</main>
+=======
 <h2>EXPERIENCE</h2>
 <?php for ($i=0; $i < (count($experience)); $i++): ?>
 <div class="experience">
@@ -108,6 +136,7 @@ $references = [
 </div>
 <?php endfor ?>
     </main>
+<<<<<<< HEAD
     <!-- ---------------------------------softskills---------------------------------------------------- -->
     <h2>Soft skills</h2>
     <div class="softskills">
@@ -157,6 +186,9 @@ $references = [
         </div>
     </div>
 <?php endfor?>
+=======
+>>>>>>> d43c8616fb74cadb1e9dcda64725e2870f71a29c
+>>>>>>> ff6699cbd4d9a9135dbb4226ccadf5baeade8e61
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
