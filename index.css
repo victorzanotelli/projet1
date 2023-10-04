@@ -142,8 +142,6 @@ img {
 .logo {
     display: grid;
     grid-template-columns: repeat(auto-fill, 15%);
-    gap: 2%;
-    text-align: center;
 }
 
 .fa-brands {
@@ -216,10 +214,11 @@ h2 {
     padding: 0.5rem 0;
 }
 
+
+
 .learnmore {
     display: inline-block;
     font-size: 0.75rem;
-    border: none;
 }
 
 .whatIDo {
@@ -292,7 +291,6 @@ h2 {
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
-
     .navbar-dekstop {
         display: block;
     }
@@ -351,15 +349,4 @@ h2 {
         text-align: center;
         font-size: 2rem;
     }
-
-    .learnmore {
-        display: none;
-    }
-    
-    .whatIDo {
-        display: flex;
-    }
-    
-
 }
-
