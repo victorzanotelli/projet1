@@ -129,34 +129,30 @@ h2 {
 .learnmore {
     display: inline-block;
     font-size: 0.75rem;
-<<<<<<< HEAD
-=======
     border: none;
->>>>>>> ff6699cbd4d9a9135dbb4226ccadf5baeade8e61
+
 }
 
 .whatIDo {
     display: none;
 }
+
+.carousel.active-slide-0 { transform: translateX(0%); }
+.carousel.active-slide-1 { transform: translateX(-100%); }
+.carousel.active-slide-2 { transform: translateX(-200%); }
 /* ----------------------------------------------Softskills-------------------------------------------------------------- */
 
-<<<<<<< HEAD
 .softskills {
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(40, 1fr);
     font-weight: bold;
-=======
+
 .carousel {
     display: flex;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
-
-.carousel.active-slide-0 { transform: translateX(0%); }
-.carousel.active-slide-1 { transform: translateX(-100%); }
-.carousel.active-slide-2 { transform: translateX(-200%); }
-
 .experience {
     flex: 0 0 100%;
     padding: 10px;
@@ -182,7 +178,7 @@ h2 {
     border: none;
     cursor: pointer;
     margin: 0 5px;
->>>>>>> ff6699cbd4d9a9135dbb4226ccadf5baeade8e61
+
 }
 
 h2 {
