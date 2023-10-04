@@ -80,6 +80,8 @@ img {
 .logo {
     display: grid;
     grid-template-columns: repeat(auto-fill, 15%);
+    gap: 2%;
+    text-align: center;
 }
 
 .fa-brands {
@@ -127,12 +129,49 @@ h2 {
 .learnmore {
     display: inline-block;
     font-size: 0.75rem;
+    border: none;
 }
 
 .whatIDo {
     display: none;
 }
 
+.carousel {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel.active-slide-0 { transform: translateX(0%); }
+.carousel.active-slide-1 { transform: translateX(-100%); }
+.carousel.active-slide-2 { transform: translateX(-200%); }
+
+.experience {
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.experience.active {
+    display: block;
+}
+
+.carousel-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
@@ -194,5 +233,7 @@ h2 {
     .whatIDo {
         display: flex;
     }
+    
+
 }
 
