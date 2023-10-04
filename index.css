@@ -242,17 +242,21 @@ h2 {
 
 .carousel-buttons {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .prev-button,
-.next-button {
-    display: inline-block;
+.next-button, .prev-buttonF, .next-buttonF  {
+    display: flex;
     padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--fond-de-cite);
+    color: var(--color-nav-bar);
     border: none;
     cursor: pointer;
     margin: 0 5px;
+    font-size: 3rem;
 }
 
 /* ----------------------formations ------------------------------------*/
@@ -262,7 +266,6 @@ h2 {
     font-weight: var(--font-weight-text);
     font-size: 1.5rem;
     margin: 1rem;
-    
     flex: 0 0 100%;
     padding: 10px;
     box-sizing: border-box;

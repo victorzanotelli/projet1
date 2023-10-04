@@ -1,6 +1,5 @@
 // JS carousel experience
 const firstExperience = document.querySelector('.experience');
-console.log(firstExperience);
 const carouselItems = document.querySelectorAll('.experience');
 let currentIndex = 0;
 

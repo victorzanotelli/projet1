@@ -92,8 +92,8 @@ include 'data.php';
         <?php endfor ?>
     </div>
     <div class="carousel-buttons">
-        <button class="prev-button">Previous</button>
-        <button class="next-button">Next</button>
+        <i class="fa-solid fa-arrow-left prev-button"></i>
+        <i class="fa-solid fa-arrow-right next-button"></i>
     </div>
 </div>
 <!-- ---------------------------------------------Foramtion--------------------------------------------------------------- -->
@@ -109,8 +109,8 @@ include 'data.php';
         <?php } ?>
     </div>        
     <div class="carousel-buttons">
-        <button class="prev-buttonF">Previous</button>
-        <button class="next-buttonF">Next</button>
+        <i class="fa-solid fa-arrow-left prev-buttonF"></i>
+        <i class="fa-solid fa-arrow-right next-buttonF"></i>
     </div>
 </div>
         
