@@ -69,6 +69,34 @@ $experience = [
 
         <!-- ---------------------------------Experience---------------------------------------------------- -->
 <div class="experience-container">
+<<<<<<< HEAD
+    <h2>EXPERIENCE</h2>
+    <div class="carousel">
+        <?php for ($i = 0; $i < count($experience); $i++): ?>
+            <div class="experience">
+                <div class="job">
+                    <?php echo $experience[$i]['job'] ?>
+                </div>
+                <div class="companyCity">
+                    <?php echo $experience[$i]['company'] . " | " . $experience[$i]['city'] ?>
+                </div>
+                <div class="date">
+                    <?php echo $experience[$i]['date'] ?>
+                </div>
+                <div class="whatIDo">
+                    <?php echo $experience[$i]['whatIdo'] ?>
+                </div>
+                <button class="learnmore">En savoir plus...</button>
+            </div>
+        <?php endfor ?>
+    </div>
+    <div class="carousel-buttons">
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
+    </div>
+</div>
+</main>
+=======
 <h2>EXPERIENCE</h2>
 <?php for ($i=0; $i < (count($experience)); $i++): ?>
 <div class="experience">
@@ -89,6 +117,7 @@ $experience = [
 </div>
 <?php endfor ?>
     </main>
+>>>>>>> d43c8616fb74cadb1e9dcda64725e2870f71a29c
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
