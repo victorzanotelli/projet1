@@ -41,3 +41,31 @@ for (let i = 0; i < whatIDo.length; i++) {
         }
     });
 }
+
+// JS carouselRef
+const firstReference = document.querySelector('.references');
+console.log(firstReference);
+const carouselItemsR = document.querySelectorAll('.references');
+let currentIndexR = 0;
+
+firstReference.classList.add('active');
+
+function showItemR(indexR) {
+    carouselItemsR[currentIndexR].classList.remove('active');
+    currentIndexR = (indexR + carouselItemsR.length) % carouselItemsR.length;
+    carouselItemsR[currentIndexR].classList.add('active');
+}
+
+function prevItemR() {
+    showItemR(currentIndexR - 1);
+}
+
+function nextItemR() {
+    showItemR(currentIndexR + 1);
+}
+
+const prevButtonR = document.querySelector('.prev-buttonR');
+const nextButtonR = document.querySelector('.next-buttonR');
+
+prevButtonR.addEventListener('click', prevItemR);
+nextButtonR.addEventListener('click', nextItemR);
