@@ -41,3 +41,13 @@ for (let i = 0; i < whatIDo.length; i++) {
         }
     });
 }
+
+// quand je clique sur le menu, apparition navbar
+// je selectionne et stock les elements
+const icon = document.querySelector(".fa-bars");
+const list = document.querySelector(".nav-list-mobile");
+// je soumet l'élément
+icon.addEventListener("click", function () {
+    list.classList.toggle("list-visible");
+    icon.classList.toggle("incon-visible");
+})
