@@ -1,4 +1,4 @@
-// JS carousel
+// JS carousel experience
 const firstExperience = document.querySelector('.experience');
 console.log(firstExperience);
 const carouselItems = document.querySelectorAll('.experience');
@@ -41,3 +41,31 @@ for (let i = 0; i < whatIDo.length; i++) {
         }
     });
 }
+
+// JS carousel formation
+const firstFormation = document.querySelector('.formation');
+console.log(firstFormation);
+const carouselItemsF = document.querySelectorAll('.formation');
+let currentIndexF = 0;
+
+firstFormation.classList.add('active');
+
+function showItemF(indexF) {
+    carouselItemsF[currentIndexF].classList.remove('active');
+    currentIndexF = (indexF + carouselItemsF.length) % carouselItemsF.length;
+    carouselItemsF[currentIndexF].classList.add('active');
+}
+
+function prevItemF() {
+    showItemF(currentIndexF - 1);
+}
+
+function nextItemF() {
+    showItemF(currentIndexF + 1);
+}
+
+const prevButtonF = document.querySelector('.prev-buttonF');
+const nextButtonF = document.querySelector('.next-buttonF');
+
+prevButtonF.addEventListener('click', prevItemF);
+nextButtonF.addEventListener('click', nextItemF);

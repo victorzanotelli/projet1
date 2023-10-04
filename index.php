@@ -37,12 +37,12 @@ include 'data.php';
             </div>
             <img src="./assets/visage_de_femme_pour_CV_seed-0ts-1695307229_idx-0.png" alt="photo d'odile deraie">
             <div class="logo">
-                <a href="http://www.linkedin.fr"><i class="fa-brands fa-linkedin" style="color: #0077b5;"></i></a>
-                <a href="http://www.facebook.fr"><i class="fa-brands fa-facebook" style="color: #3b5998;"></i></a>
-                <a href="http://www.instagram.fr"><i class="fa-brands fa-instagram" style="color: #222222"></i></a>
-                <a href="http://www.pinterest.fr"><i class="fa-brands fa-pinterest" style="color: #c8232c"></i></a>
-                <a href="http://www.github.fr"><i class="fa-brands fa-github" style="color: #171515"></i></a>
-                <a href="http://www.twitter.fr"><i class="fa-brands fa-x-twitter" style="color: #000000"></i></a>
+                <a href="http://www.linkedin.fr"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="http://www.facebook.fr"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://www.instagram.fr"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://www.pinterest.fr"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="http://www.github.fr"><i class="fa-brands fa-github"></i></a>
+                <a href="http://www.twitter.fr"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
 
@@ -81,17 +81,15 @@ include 'data.php';
     <div class="carousel">
         <?php foreach($formations as $key) {?>
         <div class="formation">
-            <div><?php echo $key['title'] ?></div>
-            <div><?php echo $key['school'] . ' | ' . $key['city'] ?></div>
-            <div><?php echo $key['city'] ?></div>
-            <div><?php echo $key['date'] ?></div>
-            
+            <div class="job"><?php echo $key['title'] ?></div>
+            <div class="companyCity"><?php echo $key['school'] . ' | ' . $key['city'] ?></div>
+            <div class="date"><?php echo $key['date'] ?></div>
+            </div>    
         <?php } ?>
-        </div>
     </div>        
     <div class="carousel-buttons">
-        <button class="prev-button">Previous</button>
-        <button class="next-button">Next</button>
+        <button class="prev-buttonF">Previous</button>
+        <button class="next-buttonF">Next</button>
     </div>
 </div>
         
