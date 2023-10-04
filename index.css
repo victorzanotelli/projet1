@@ -142,8 +142,6 @@ img {
 .logo {
     display: grid;
     grid-template-columns: repeat(auto-fill, 15%);
-    gap: 2%;
-    text-align: center;
 }
 
 .fa-brands {
@@ -151,8 +149,32 @@ img {
     text-align: center;
 }
 
-/* ----------------------------------------Experience---------------------------------------------------------  */
-.experience-container {
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #222222;
+}
+
+.fa-pinterest {
+    color: #c8232c;
+}
+
+.fa-github {
+    color: #171515;
+}
+
+.fa-x-twitter {
+    color: #000000;
+}
+
+/* ----------------------------------------Experience + carousel---------------------------------------------------------  */
+.container {
     display: flex;
     width: 100%;
     height: auto;
@@ -165,6 +187,7 @@ h2 {
     font-family: var(--font-title);
     font-weight: var(--font-weight-title);
     font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .experience {
@@ -173,7 +196,10 @@ h2 {
     font-weight: var(--font-weight-text);
     font-size: 1.5rem;
     margin: 1rem;
-    width: 95%;
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
 }
 
 .job {
@@ -188,10 +214,11 @@ h2 {
     padding: 0.5rem 0;
 }
 
+
+
 .learnmore {
     display: inline-block;
     font-size: 0.75rem;
-    border: none;
 }
 
 .whatIDo {
@@ -208,36 +235,62 @@ h2 {
 .carousel.active-slide-1 { transform: translateX(-100%); }
 .carousel.active-slide-2 { transform: translateX(-200%); }
 
-.experience {
-    flex: 0 0 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    display: none;
-}
-
 .experience.active {
     display: block;
 }
 
 .carousel-buttons {
     text-align: center;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .prev-button,
-.next-button {
-    display: inline-block;
+.next-button, .prev-buttonF, .next-buttonF  {
+    display: flex;
     padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--fond-de-cite);
+    color: var(--color-nav-bar);
     border: none;
     cursor: pointer;
     margin: 0 5px;
+    font-size: 3rem;
 }
+
+.containerLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line2 {
+    display: flex;
+    width: 70%;
+    height: 2px;
+    background: var(--color-nav-bar);
+}
+
+/* ----------------------formations ------------------------------------*/
+.formation {
+    text-align: center;
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-text);
+    font-size: 1.5rem;
+    margin: 1rem;
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.formation.active {
+    display: block;
+}
+
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
-
     .navbar-dekstop {
         display: block;
     }
@@ -304,7 +357,4 @@ h2 {
     .whatIDo {
         display: flex;
     }
-    
-
 }
-
