@@ -21,5 +21,4 @@ const list = document.querySelector(".nav-list-mobile");
 icon.addEventListener("click", function () {
     list.classList.toggle("list-visible");
     icon.classList.toggle("incon-visible");
-    console.log(list);
 })

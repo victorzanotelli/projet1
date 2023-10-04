@@ -15,9 +15,12 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--fond-de-cite);
     box-sizing: border-box;
     text-decoration: none;
+}
+
+body {
+    background-color: var(--fond-de-cite);
 }
 
 /*----------------------------navbar-dekstop------------------------------------*/
@@ -25,7 +28,7 @@
     display: none;
     background-color: var(--color-nav-bar);
     text-align: center;
-    height: 40px;
+    height: 30px;
 }
 
 .navbar-dekstop a {
@@ -34,8 +37,6 @@
     font-style: var(--font-title);
     padding: 1%;
     font-family: var(--font-title);
-
-
 }
 
 /*----------------------------navbar-mobile------------------------------------*/
@@ -67,6 +68,10 @@
     color: var(--color-nav-bar);
     font-family: var(--font-title);
     font-weight: bolder;
+}
+
+.fa-bars {
+    color: #3460b1;
 }
 
 .list-visible {

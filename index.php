@@ -37,7 +37,7 @@ $experience = [
 
 <body>
     <main>
-        <!----------------------------navbar-dekstop-------------------->
+                <!----------------------------navbar-dekstop-------------------->
         <nav class="navbar-dekstop">
             <a href="#">Informations</a>
             <a href="#">Experiences</a>
@@ -46,9 +46,9 @@ $experience = [
             <a href="#">Références</a>
             <a href="#">Portofolio</a>
         </nav>
-        <!----------------------------navbar-dekstop-------------------->
+        <!----------------------------navbar-mobile-------------------->
         <nav class="navbar-mobile">
-            <i class="fa-solid fa-bars" style="color: #3460b1;"></i>
+            <i class="fa-solid fa-bars"></i>
             <div class="nav-list-mobile">
                 <a href="#">Informations</a>
                 <a href="#">Experiences</a>
@@ -90,26 +90,32 @@ $experience = [
 
         <!-- ---------------------------------Experience---------------------------------------------------- -->
 <div class="experience-container">
-<h2>EXPERIENCE</h2>
-<?php for ($i=0; $i < (count($experience)); $i++): ?>
-<div class="experience">
-<div class="job">
-    <?php echo $experience[$i]['job']?>
-</div>
-<div class="companyCity">
-    <?php echo $experience[$i]['company'] . "|" . $experience[$i]['city'] ?>
-</div>
-<div class="date">
-    <?php echo $experience[$i]['date']?>
-</div>
-<div class="whatIDo">
-    <?php echo $experience[$i]['whatIdo']?>
+    <h2>EXPERIENCE</h2>
+    <div class="carousel">
+        <?php for ($i = 0; $i < count($experience); $i++): ?>
+            <div class="experience">
+                <div class="job">
+                    <?php echo $experience[$i]['job'] ?>
+                </div>
+                <div class="companyCity">
+                    <?php echo $experience[$i]['company'] . " | " . $experience[$i]['city'] ?>
+                </div>
+                <div class="date">
+                    <?php echo $experience[$i]['date'] ?>
+                </div>
+                <div class="whatIDo">
+                    <?php echo $experience[$i]['whatIdo'] ?>
+                </div>
+                <button class="learnmore">En savoir plus...</button>
+            </div>
+        <?php endfor ?>
     </div>
-    <button class="learnmore">En savoir plus...</button>
+    <div class="carousel-buttons">
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
     </div>
 </div>
-<?php endfor ?>
-    </main>
+</main>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
