@@ -181,24 +181,24 @@ h2 {
     grid-column: 20/23;
     grid-row: 2;
     height: 45%;
-    background-color : #3460b1;
+    background-color : var(--color-nav-bar);
 }
 .b12 {
     grid-column: 24/27;
     grid-row: 2;
-    background-color:#3460b1;
+    background-color:var(--color-nav-bar);
     height: 45%;
 }
 .b13 {
     grid-column: 28/31;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color :var(--color-nav-bar);
     height: 45%;
 }
 .b14{
     grid-column: 32/35;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color: var(--color-nav-bar);
     height:45%;
 }
 .b15 {
@@ -219,30 +219,30 @@ h2 {
     grid-column: 20/23;
     grid-row: 2;
     height: 45%;
-    background-color : #3460b1;
+    background-color : var(--color-nav-bar);
 }
 .b22 {
     grid-column: 24/27;
     grid-row: 2;
-    background-color:#3460b1;
+    background-color:var(--color-nav-bar);
     height: 45%;
 }
 .b23 {
     grid-column: 28/31;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color: var(--color-nav-bar);
     height: 45%;
 }
 .b24{
     grid-column: 32/35;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color: var(--color-nav-bar);
     height:45%;
 }
 .b25 {
     grid-column: 36/39;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color: var(--color-nav-bar);
     height: 45%;
 }
 .bar3{
@@ -257,30 +257,30 @@ h2 {
     grid-column: 20/23;
     grid-row: 2;
     height: 45%;
-    background-color : #3460b1;
+    background-color : var(--color-nav-bar);
 }
 .b32 {
     grid-column: 24/27;
     grid-row: 2;
-    background-color:#3460b1;
+    background-color : var(--color-nav-bar);
     height: 45%;
 }
 .b33 {
     grid-column: 28/31;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color : var(--color-nav-bar);
     height: 45%;
 }
 .b34{
     grid-column: 32/35;
     grid-row: 2;
-    background-color: #919192;
+    background-color : #919192;
     height:45%;
 }
 .b35 {
     grid-column: 36/39;
     grid-row: 2;
-    background-color: #919192;
+    background-color : #919192;
     height: 45%;
 }
 .bar4{
@@ -295,30 +295,30 @@ h2 {
     grid-column: 20/23;
     grid-row: 2;
     height: 45%;
-    background-color : #3460b1;
+    background-color : var(--color-nav-bar);
 }
 .b42 {
     grid-column: 24/27;
     grid-row: 2;
-    background-color:#3460b1;
+    background-color : var(--color-nav-bar);
     height: 45%;
 }
 .b43 {
     grid-column: 28/31;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color : var(--color-nav-bar);
     height: 45%;
 }
 .b44{
     grid-column: 32/35;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color : var(--color-nav-bar);
     height:45%;
 }
 .b45 {
     grid-column: 36/39;
     grid-row: 2;
-    background-color: #3460b1;
+    background-color : var(--color-nav-bar);
     height: 45%;
 }
 
