@@ -96,6 +96,9 @@ include 'data.php';
         <i class="fa-solid fa-arrow-right next-button"></i>
     </div>
 </div>
+<div class="containerLine">
+<div class="line2"></div>
+</div>
 <!-- ---------------------------------------------Foramtion--------------------------------------------------------------- -->
 <div class="container">
 <h2>FORMATIONS</h2>
@@ -113,7 +116,9 @@ include 'data.php';
         <i class="fa-solid fa-arrow-right next-buttonF"></i>
     </div>
 </div>
-        
+<div class="containerLine">
+<div class="line2"></div>
+</div>       
 </main>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>

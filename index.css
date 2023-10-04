@@ -259,6 +259,19 @@ h2 {
     font-size: 3rem;
 }
 
+.containerLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line2 {
+    display: flex;
+    width: 70%;
+    height: 2px;
+    background: var(--color-nav-bar);
+}
+
 /* ----------------------formations ------------------------------------*/
 .formation {
     text-align: center;
