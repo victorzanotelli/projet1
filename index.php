@@ -114,26 +114,6 @@ $references = [
     </div>
 </div>
 </main>
-<h2>EXPERIENCE</h2>
-<?php for ($i=0; $i < (count($experience)); $i++): ?>
-<div class="experience">
-<div class="job">
-    <?php echo $experience[$i]['job']?>
-</div>
-<div class="companyCity">
-    <?php echo $experience[$i]['company'] . "|" . $experience[$i]['city'] ?>
-</div>
-<div class="date">
-    <?php echo $experience[$i]['date']?>
-</div>
-<div class="whatIDo">
-     <?php echo $experience[$i]['whatIdo']?>
-     </div>
-     <button class="learnmore">En savoir plus...</button>
-    </div>
-</div>
-<?php endfor ?>
-    </main>
     <!-- ---------------------------------softskills---------------------------------------------------- -->
     <h2>Soft skills</h2>
     <div class="softskills">
