@@ -16,6 +16,27 @@ include 'data.php';
 
 <body>
     <main>
+                <!----------------------------navbar-dekstop-------------------->
+        <nav class="navbar-dekstop">
+            <a href="#">Informations</a>
+            <a href="#">Experiences</a>
+            <a href="#">Formations</a>
+            <a href="#">Soft Skills</a>
+            <a href="#">Références</a>
+            <a href="#">Portofolio</a>
+        </nav>
+        <!----------------------------navbar-mobile-------------------->
+        <nav class="navbar-mobile">
+            <i class="fa-solid fa-bars"></i>
+            <div class="nav-list-mobile">
+                <a href="#">Informations</a>
+                <a href="#">Experiences</a>
+                <a href="#">Formations</a>
+                <a href="#">Soft Skills</a>
+                <a href="#">Références</a>
+                <a href="#">Portofolio</a>
+            </div>
+        </nav>
         <!-- ------------------------ infocontact ------------------------------- -->
         <div class="description">
             <div class="info">
