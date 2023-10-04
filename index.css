@@ -15,9 +15,71 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--fond-de-cite);
     box-sizing: border-box;
     text-decoration: none;
+}
+
+body {
+    background-color: var(--fond-de-cite);
+}
+
+/*----------------------------navbar-dekstop------------------------------------*/
+.navbar-dekstop {
+    display: none;
+    background-color: var(--color-nav-bar);
+    text-align: center;
+    height: 30px;
+}
+
+.navbar-dekstop a {
+    background-color: var(--color-nav-bar);
+    color: var(--fond-de-cite);
+    font-style: var(--font-title);
+    padding: 1%;
+    font-family: var(--font-title);
+}
+
+/*----------------------------navbar-mobile------------------------------------*/
+
+.navbar-mobile i {
+    z-index: 900;
+    font-size: 40px;
+    position: fixed;
+    right: 10px;
+    top: 0;
+}
+
+.nav-list-mobile {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--fond-de-cite);
+    transition: top 0.5s;
+}
+
+.nav-list-mobile a {
+    background-color: var(--fond-de-cite);
+    color: var(--color-nav-bar);
+    font-family: var(--font-title);
+    font-weight: bolder;
+}
+
+.fa-bars {
+    color: #3460b1;
+}
+
+.list-visible {
+    top: 0;
+}
+
+.icon-visible {
+    color: var(--fond-de-cite);
 }
 
 /* --------------------------------------infocontact ------------------------*/
@@ -175,6 +237,15 @@ h2 {
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
+
+    .navbar-dekstop {
+        display: block;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
     .description {
         grid-template-columns: 1fr 1fr;
     }
