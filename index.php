@@ -42,7 +42,7 @@ $references = [
 
 
 ?>
-// ------------------------------------------------------html--------------------------------------------------------------
+<!-- ------------------------------------HTML-------------------------------------------------------- -->
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -113,7 +113,6 @@ $references = [
         <button class="next-button">Next</button>
     </div>
 </div>
-</main>
     <!-- ---------------------------------softskills---------------------------------------------------- -->
     <h2>Soft skills</h2>
     <div class="softskills">
@@ -151,6 +150,7 @@ $references = [
         </div>
     </div>
     <!-- ---------------------------------Références---------------------------------------------------- -->
+    <div class="carousel">
     <div class="references-container">
         <h2>REFERENCES</h2>
         <?php for ($i=0; $i < (count($references)); $i++): ?>
@@ -163,6 +163,21 @@ $references = [
         </div>
     </div>
 <?php endfor?>
+    <div class="carousel-buttons">
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
+    </div>
+    <!-- ---------------------------------Portfolio---------------------------------------------------- -->
+<h2>PORTFOLIO</h2>
+    <div class="card1"></div>
+        <img src="assets/colorfull_branded_sneakers_on_a_brick_wall_seed-0ts-1695373368_idx-0.png" alt="basket multicolor">
+    <div class="card2"></div>
+        <img src="assets/front_page_of_a_website_design_seed-0ts-1695373519_idx-0.png" alt="photo d'un téléphone sur un bureau">
+    <div class="card3"></div>
+        <img src="assets/hands_with_colorfull_dust__with_a_flashy_backround_seed-0ts-1695373001_idx-0.png" alt="photo de mains couvertent de peinture">
+    <div class="card4"></div>
+        <img src="assets/real_photograhClose-up_view_avocado_water_droplets_blue_background_minimalist_painting_simple_shapes_smooth_contours_seed-0ts-1695372366_idx-0.png" alt="photo d'avocat humide">
+    </main>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
