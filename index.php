@@ -22,9 +22,28 @@ $experience = [
         'date' => 'Septembre 2020 - Février 2021',
         'whatIdo' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!',
     ],
-]
-// ------------------------------------------------------html--------------------------------------------------------------
+];
+
+$references = [
+    [
+        'referent' => 'Ben Riche',
+        'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
+    ],
+    [
+        'referent' => 'Marie Jeanne',
+        'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
+    ],
+    [
+        'referent' => 'Ben Riche',
+        'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
+
+    ],
+];
+
+
 ?>
+// ------------------------------------------------------html--------------------------------------------------------------
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -125,6 +144,19 @@ $experience = [
             <div class="b45"></div>
         </div>
     </div>
+    <!-- ---------------------------------Références---------------------------------------------------- -->
+    <div class="references-container">
+        <h2>REFERENCES</h2>
+        <?php for ($i=0; $i < (count($references)); $i++): ?>
+            <div class="referent">
+                <?php echo $references[$i]['referent']?>
+            </div>
+            <div class="citation">
+                <?php echo $references[$i]['citation']?>
+            </div>
+        </div>
+    </div>
+<?php endfor?>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
