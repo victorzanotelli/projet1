@@ -149,8 +149,32 @@ img {
     text-align: center;
 }
 
-/* ----------------------------------------Experience---------------------------------------------------------  */
-.experience-container {
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #222222;
+}
+
+.fa-pinterest {
+    color: #c8232c;
+}
+
+.fa-github {
+    color: #171515;
+}
+
+.fa-x-twitter {
+    color: #000000;
+}
+
+/* ----------------------------------------Experience + carousel---------------------------------------------------------  */
+.container {
     display: flex;
     width: 100%;
     height: auto;
@@ -163,6 +187,7 @@ h2 {
     font-family: var(--font-title);
     font-weight: var(--font-weight-title);
     font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .experience {
@@ -171,7 +196,10 @@ h2 {
     font-weight: var(--font-weight-text);
     font-size: 1.5rem;
     margin: 1rem;
-    width: 95%;
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
 }
 
 .job {
@@ -195,6 +223,69 @@ h2 {
 
 .whatIDo {
     display: none;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel.active-slide-0 { transform: translateX(0%); }
+.carousel.active-slide-1 { transform: translateX(-100%); }
+.carousel.active-slide-2 { transform: translateX(-200%); }
+
+.experience.active {
+    display: block;
+}
+
+.carousel-buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prev-button,
+.next-button, .prev-buttonF, .next-buttonF  {
+    display: flex;
+    padding: 5px 10px;
+    background-color: var(--fond-de-cite);
+    color: var(--color-nav-bar);
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 3rem;
+}
+
+.containerLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line2 {
+    display: flex;
+    width: 70%;
+    height: 2px;
+    background: var(--color-nav-bar);
+}
+
+/* ----------------------formations ------------------------------------*/
+.formation {
+    text-align: center;
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-text);
+    font-size: 1.5rem;
+    margin: 1rem;
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.formation.active {
+    display: block;
 }
 
 
@@ -257,5 +348,13 @@ h2 {
         padding: 25%;
         text-align: center;
         font-size: 2rem;
+    }
+
+    .learnmore {
+        display: none;
+    }
+    
+    .whatIDo {
+        display: flex;
     }
 }
