@@ -91,6 +91,13 @@ body {
     grid-auto-rows: minmax(10px, auto)
 }
 
+.description h1 {
+display: none;
+}
+
+.description h2 {
+display: none;
+}
 .info {
     display: grid;
     width: 95%;
@@ -98,7 +105,7 @@ body {
     font-family: var(--font_text);
     text-align: center;
     font-size: 1.5rem;
-    color: rgba(42, 42, 42, 0.33);
+    color: grey;
     font-style: normal;
     font-weight: var(--font-weight-title);
     line-height: 125%;
@@ -135,7 +142,7 @@ div p {
     line-height: 1.5rem;
 }
 
-.Odile {
+.odile_picture {
     width: 100%;
     height: auto;
 }
@@ -143,6 +150,8 @@ div p {
 .logo {
     display: grid;
     grid-template-columns: repeat(auto-fill, 15%);
+    gap: 2%;
+    align-self: center;
 }
 
 .fa-brands {
@@ -181,6 +190,7 @@ div p {
     height: auto;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 h2 {
@@ -238,7 +248,6 @@ h2 {
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(40, 1fr);
-    grid-template-rows:  repeat(4, 1fr);
     font-weight: bold;
 }
 
@@ -251,7 +260,6 @@ h2 {
 
 .references {
     flex: 0 0 100%;
-    margin: 1rem;
     padding: 10px;
     box-sizing: border-box;
     display: none;
@@ -272,14 +280,26 @@ h2 {
 }
 
 .prev-button,
-.next-button, .next-buttonR,.prev-buttonR, .prev-buttonF, .next-buttonF  {
+.next-button, .next-buttonR,.prev-buttonR, .prev-buttonF, .next-buttonF {
     display: flex;
     padding: 5px 10px;
-    background-color: var(--fond-de-cite);
+    background-color: transparent;
     color: var(--color-nav-bar);
     border: none;
     cursor: pointer;
     margin: 0 5px;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button, .prev-buttonF, .prev-buttonR {
+    left: 0;
+}
+
+.next-button, .next-buttonF, .next-buttonR {
+    right: 0;
 }
 .skill {
     grid-column: 1 /12;
@@ -552,6 +572,7 @@ img {
 .slide-img img {
     width: 100%;
     height: 300px;
+    object-fit: cover;
 }
 
 .slide-img figcaption{
@@ -612,35 +633,52 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
+    .description h1 {
+        display: grid;
+        font-family: var(--font-title);
+        font-weight: var(--font-weight-title);
+        grid-column: 1 2;
+        grid-row: 1 2;
+        text-align: center;
+        }
+        
+        .description h2 {
+        display: grid;
+        grid-column: 1 2;
+        grid-row: 2 3;
+        margin-top: 0;
+        }
+
     .info {
         display: grid;
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
         width: auto;
+        padding: 0;
     }
 
     .line {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
     }
 
     .contact {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
 
-    .Odile {
+    .odile_picture {
         display: grid;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 7;
         border-radius: 0 50%;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         height: auto;
@@ -649,8 +687,8 @@ img {
     .logo {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;
     }
 
     .fa-brands {
@@ -666,7 +704,6 @@ img {
     .whatIDo {
         display: flex;
     }
-
 }
 
 /*-------------------------------------------------Portfolio-----------------------------------------------------------*/
