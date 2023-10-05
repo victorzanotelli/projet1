@@ -89,7 +89,6 @@ include 'data.php';
             <?php echo $experience[$i]['whatIdo']?>
             </div>
             <button class="learnmore">En savoir plus...</button>
-            </div>
         </div>
         <?php endfor ?>
     </div>

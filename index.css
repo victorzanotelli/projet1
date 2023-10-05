@@ -188,6 +188,7 @@ img {
     height: auto;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 h2 {
@@ -258,14 +259,24 @@ h2 {
 .next-button, .prev-buttonF, .next-buttonF  {
     display: flex;
     padding: 5px 10px;
-    background-color: var(--fond-de-cite);
+    background-color: transparent;
     color: var(--color-nav-bar);
     border: none;
     cursor: pointer;
     margin: 0 5px;
     font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
+.next-button, .next-buttonF {
+    right: 0;
+}
+
+.prev-button, .prev-buttonF {
+    left: 0;
+}
 .containerLine {
     display: flex;
     justify-content: center;
