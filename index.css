@@ -510,8 +510,16 @@ h2 {
     margin: 1rem;
     width: 95%;
     padding: 0.5rem 0;
+    flex: 0 0 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+
 }
 
+.formation.active {
+    display: block;
+}
 /*-----------------------------------------------------Portfolio-----------------------------------------------------------------*/
 
 html, body {
@@ -588,19 +596,6 @@ img {
     z-index: 100;
     transition: left 0.65s ease-out;
 }
-
-/* -------------------media queries pour + 780 px--------------------- */
-@media screen and (min-width: 780px) {
-    flex: 0 0 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    display: none;
-}
-
-.formation.active {
-    display: block;
-}
-
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
