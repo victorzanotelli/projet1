@@ -124,7 +124,7 @@ $experience = [
         <nav class="navfooter">
             <a href="#"><i class="fa-solid fa-phone" style="color: #e8e9eb;"></i></a>
             <button class="cv" type="button"><img src="assets\cv_3135686.png" alt="icone"/></button>
-            <a href="test.html"><i class="fa-solid fa-envelope" style="color: #e8e9eb;"></i></a>
+            <a href="form.html"><i class="fa-solid fa-envelope" style="color: #e8e9eb;"></i></a>
         </nav>
 </footer>
 </body>
