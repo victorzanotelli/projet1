@@ -209,6 +209,7 @@ h2 {
     padding: 10px;
     box-sizing: border-box;
     display: none;
+
 }
 
 .job {
@@ -223,11 +224,11 @@ h2 {
     padding: 0.5rem 0;
 }
 
-
-
 .learnmore {
     display: inline-block;
     font-size: 0.75rem;
+    border: none;
+    background-color: var(--fond-de-cite);
 }
 
 .whatIDo {
