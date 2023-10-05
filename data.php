@@ -53,7 +53,7 @@ $references = [
         'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
     ],
     [
-        'referent' => 'Ben Riche',
+        'referent' => 'Mr Mix-a-lot',
         'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
 
     ],

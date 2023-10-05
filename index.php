@@ -154,21 +154,44 @@ include 'data.php';
     </div>
     <!-- ---------------------------------Portfolio---------------------------------------------------- -->
 <h2>PORTFOLIO</h2>
-    <div class="cards-container">
-        <div class="card" id="card1"></div>
-            <img src="assets/colorfull_branded_sneakers_on_a_brick_wall_seed-0ts-1695373368_idx-0.png" alt="basket multicolor">
-        <div class="card" id="card2"></div>
-            <img src="assets/front_page_of_a_website_design_seed-0ts-1695373519_idx-0.png" alt="photo d'un téléphone sur un bureau">
-        <div class="card" id="card3"></div>
-            <img src="assets/hands_with_colorfull_dust__with_a_flashy_backround_seed-0ts-1695373001_idx-0.png" alt="photo de mains couvertent de peinture">
-        <div class="card" id="card4"></div>
-            <img src="assets/real_photograhClose-up_view_avocado_water_droplets_blue_background_minimalist_painting_simple_shapes_smooth_contours_seed-0ts-1695372366_idx-0.png" alt="photo d'avocat humide">
-    </div>
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+                <label for="slide-dot-4"></label>
+            </div>
+
+            <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+            <figure class="slide-img">
+                <img src="./assets/colorfull_branded_sneakers_on_a_brick_wall_seed-0ts-1695373368_idx-0.png" alt="Pair de basket multicolor">
+                <figcaption>BRAND CAMPAIGN</figcaption>
+            </figure>
+
+            <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+            <figure class="slide-img">
+                <img src="./assets/front_page_of_a_website_design_seed-0ts-1695373519_idx-0.png" alt="Bureau d'un Web designer" >
+                <figcaption>WEB DESIGN</figcaption>
+            </figure>
+
+            <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+            <figure class="slide-img">
+                <img src="./assets/hands_with_colorfull_dust__with_a_flashy_backround_seed-0ts-1695373001_idx-0.png" alt="Mains recouvertent de poussière multicolor">
+                <figcaption>LOGO DESIGN</figcaption>
+            </figure>
+
+            <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
+            <figure class="slide-img">
+                <img src="./assets/Close-up_view_avocado_water_droplets.png" alt="photo contemporaine d'avocats">
+                <figcaption>CORPORATE IDENTITY</figcaption>
+            </figure>
+
+        </div>
     </main>
 <div class="containerLine">
 <div class="line2"></div>
 </div>
-<!-- ---------------------------------------------Foramtion--------------------------------------------------------------- -->
+<!-- ---------------------------------------------Formation--------------------------------------------------------------- -->
 <div class="container">
 <h2>FORMATIONS</h2>
     <div class="carousel">
@@ -177,16 +200,16 @@ include 'data.php';
             <div class="job"><?php echo $key['title'] ?></div>
             <div class="companyCity"><?php echo $key['school'] . ' | ' . $key['city'] ?></div>
             <div class="date"><?php echo $key['date'] ?></div>
-            </div>    
+            </div>
         <?php } ?>
-    </div>        
+    </div>
     <div class="carousel-buttons">
         <i class="fa-solid fa-arrow-left prev-buttonF"></i>
         <i class="fa-solid fa-arrow-right next-buttonF"></i>
     </div>
 </div>
 <div class="containerLine">
-<div class="line2"></div>
+    <div class="line2"></div>
 </div>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
