@@ -90,6 +90,14 @@ body {
     grid-auto-rows: minmax(10px, auto)
 }
 
+.description > h1 {
+    display: none;
+}
+
+.description > h2 {
+    display: none;
+}
+
 .info {
     display: grid;
     width: 95%;
@@ -97,7 +105,7 @@ body {
     font-family: var(--font_text);
     text-align: center;
     font-size: 1.5rem;
-    color: rgba(42, 42, 42, 0.33);
+    color: grey;
     font-style: normal;
     font-weight: var(--font-weight-title);
     line-height: 125%;
@@ -303,27 +311,47 @@ h2 {
         grid-template-columns: 1fr 1fr;
     }
 
+    .description > h1 {
+        color: var(--color-font);
+        display: grid;
+        grid-column: 1 2 ;
+        grid-row: 1 2;
+        width: auto;
+        font-weight: var(--font-weight-title);
+        font-family: var(--font-title);
+        text-align: center;
+        font-size: 2.5rem;
+        align-self: center;
+    }
+    .description > h2 {
+        display: grid;
+        grid-column: 1 2;
+        grid-row: 2 3;
+        margin-top: 0;
+        align-self: center;
+}
     .info {
         display: grid;
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row: 3 4;
         width: auto;
+        padding: 0;
+        align-self: center;
     }
 
     .line {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
     }
 
     .contact {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
 
     img {
@@ -331,7 +359,7 @@ h2 {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
-        grid-row-end: 5;
+        grid-row-end: 7;
         border-radius: 0 50%;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         height: auto;
@@ -340,8 +368,8 @@ h2 {
     .logo {
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;
     }
 
     .fa-brands {

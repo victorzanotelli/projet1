@@ -1,14 +1,14 @@
 <?php
 $experience = [
     [
-        'job' => 'Devellopeur Web Full Stack - JS, PHP',
+        'job' => 'Developpeur Web Full Stack - JS, PHP',
         'company' => 'CBD',
         'city' => 'Lyon, France',
         'date' => 'depuis Septembre 2022',
         'whatIdo' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!',
     ],
     [
-        'job' => 'Devellopeur Web Front-End Senior - JS',
+        'job' => 'Developpeur Web Front-End Senior - JS',
         'company' => 'MOF',
         'city' => 'Lyon, France',
         'date' => 'Février 2021 - Septembre 2022',

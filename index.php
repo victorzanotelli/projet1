@@ -39,8 +39,10 @@ include 'data.php';
         </nav>
         <!-- ------------------------ infocontact ------------------------------- -->
         <div class="description">
+            <h1>Odile DERAIE</h1>
+            <h2>Developpeuse Web</h2>
             <div class="info">
-                <p>Web develloper diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
+                <p>Web developpeuse diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
                     création de sites web. Compétences solides en HTML, CSS, JavaScript, et PHP. Toujours à la pointe
                     des dernières tendances technologiques.
                 </p>
