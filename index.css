@@ -23,6 +23,10 @@ body {
     background-color: var(--fond-de-cite);
 }
 
+.navfooter{
+    background-color: var(--color-nav-bar);
+    text-align: center;
+}
 /*----------------------------navbar-dekstop------------------------------------*/
 .navbar-dekstop {
     display: none;
@@ -35,18 +39,26 @@ body {
     background-color: var(--color-nav-bar);
     color: var(--fond-de-cite);
     font-style: var(--font-title);
-    padding: 1%;
+    padding: 1% 1% 0% 1%;;
     font-family: var(--font-title);
 }
 
 /*----------------------------navbar-mobile------------------------------------*/
+.navbar-mobile{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color:var(--fond-de-cite);
+    
+}
 
 .navbar-mobile i {
     z-index: 900;
-    font-size: 40px;
-    position: fixed;
-    right: 10px;
+    font-size: 50px;
+    right: 0;
     top: 0;
+    
 }
 
 .nav-list-mobile {
@@ -71,7 +83,9 @@ body {
 }
 
 .fa-bars {
-    color: #3460b1;
+    color: black;
+    background-color: #3460b1;
+    border-radius: 0% 0% 0% 20%;;
 }
 
 .list-visible {
@@ -80,6 +94,14 @@ body {
 
 .icon-visible {
     color: var(--fond-de-cite);
+}
+
+/* --------------------------------------Odile------------------------*/
+.odile{
+    text-align: center;
+    font-size: 1.5rem;
+
+
 }
 
 /* --------------------------------------infocontact ------------------------*/
@@ -237,6 +259,9 @@ h2 {
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width:780px) {
+    .odile{
+        display: none;
+    }
 
     .navbar-dekstop {
         display: block;

@@ -38,6 +38,7 @@ $experience = [
 <body>
     <main>
                 <!----------------------------navbar-dekstop-------------------->
+                
         <nav class="navbar-dekstop">
             <a href="#">Informations</a>
             <a href="#">Experiences</a>
@@ -48,6 +49,7 @@ $experience = [
         </nav>
         <!----------------------------navbar-mobile-------------------->
         <nav class="navbar-mobile">
+            <h1 class="odile">Odile Deraie<p>web developpeuse</p></h1>
             <i class="fa-solid fa-bars"></i>
             <div class="nav-list-mobile">
                 <a href="#">Informations</a>
@@ -60,7 +62,9 @@ $experience = [
         </nav>
         <!-- ------------------------ infocontact ------------------------------- -->
         <div class="description">
+            
             <div class="info">
+                <br>
                 <p>Web develloper diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
                     création de sites web. Compétences solides en HTML, CSS, JavaScript, et PHP. Toujours à la pointe
                     des dernières tendances technologiques.
@@ -116,6 +120,13 @@ $experience = [
     </div>
 </div>
 </main>
+<footer>
+        <nav class="navfooter">
+            <a href="#"><i class="fa-solid fa-phone" style="color: #e8e9eb;"></i></a>
+            <a href="#"></a>
+            <a href="#"><i class="fa-solid fa-envelope" style="color: #e8e9eb;"></i></a>
+        </nav>
+</footer>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
