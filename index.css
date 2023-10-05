@@ -106,7 +106,8 @@ body {
 /* --------------------------------------Odile------------------------*/
 .odile{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: var(--font-title);
 
 
 }
@@ -340,9 +341,19 @@ h2 {
 
 }
 .navfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--color-nav-bar);
     text-align: center;
-    
-    
+}
+.cv{
+border-radius: 50%;
+width: 7%;
+height: 7%;
 }
 
+.fa-solid{
+    font-size: 200%;
+    
+}

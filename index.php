@@ -41,7 +41,7 @@ $experience = [
                 
         <nav class="navbar-dekstop">
             <a href="#">Informations</a>
-            <a href="#">Experiences</a>
+            <a href="#experience">Experiences</a>
             <a href="#">Formations</a>
             <a href="#">Soft Skills</a>
             <a href="#">Références</a>
@@ -52,8 +52,8 @@ $experience = [
             <h1 class="odile">Odile Deraie<p>web developpeuse</p></h1>
             <i class="fa-solid fa-bars"></i>
             <div class="nav-list-mobile">
-                <a href="#">Informations</a>
-                <a href="#">Experiences</a>
+                <a href="#inform">Informations</a>
+                <a href="#experience">Experiences</a>
                 <a href="#">Formations</a>
                 <a href="#">Soft Skills</a>
                 <a href="#">Références</a>
@@ -63,7 +63,7 @@ $experience = [
         <!-- ------------------------ infocontact ------------------------------- -->
         <div class="description">
             
-            <div class="info">
+            <div class="info" id="inform">
                 <br>
                 <p>Web develloper diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
                     création de sites web. Compétences solides en HTML, CSS, JavaScript, et PHP. Toujours à la pointe
@@ -94,7 +94,7 @@ $experience = [
 
         <!-- ---------------------------------Experience---------------------------------------------------- -->
 <div class="experience-container">
-    <h2>EXPERIENCE</h2>
+    <h2 id="experience">EXPERIENCE</h2>
     <div class="carousel">
         <?php for ($i = 0; $i < count($experience); $i++): ?>
             <div class="experience">
@@ -123,7 +123,7 @@ $experience = [
 <footer>
         <nav class="navfooter">
             <a href="#"><i class="fa-solid fa-phone" style="color: #e8e9eb;"></i></a>
-            <a href="#"></a>
+            <button class="cv" type="button"><img src="assets\cv_3135686.png" alt="icone"/></button>
             <a href="#"><i class="fa-solid fa-envelope" style="color: #e8e9eb;"></i></a>
         </nav>
 </footer>
