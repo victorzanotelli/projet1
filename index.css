@@ -15,10 +15,7 @@
 * {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     background-color:var(--fond-de-cite);
-=======
->>>>>>> main
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -218,16 +215,10 @@ h2 {
     padding: 0.5rem 0;
 }
 
-
-
 .learnmore {
     display: inline-block;
     font-size: 0.75rem;
-<<<<<<< HEAD
     border: none;
-
-=======
->>>>>>> main
 }
 
 .whatIDo {
@@ -253,7 +244,7 @@ h2 {
     transition: transform 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
+
 .references {
     flex: 0 0 100%;
     padding: 10px;
@@ -261,14 +252,11 @@ h2 {
     display: none;
 }
 
-.references.active {
-=======
 .carousel.active-slide-0 { transform: translateX(0%); }
 .carousel.active-slide-1 { transform: translateX(-100%); }
 .carousel.active-slide-2 { transform: translateX(-200%); }
 
 .experience.active {
->>>>>>> main
     display: block;
 }
 
@@ -280,21 +268,14 @@ h2 {
 }
 
 .prev-button,
-<<<<<<< HEAD
-.next-button, .next-buttonR,.prev-buttonR {
-    display: inline-block;
-=======
-.next-button, .prev-buttonF, .next-buttonF  {
+.next-button, .next-buttonR,.prev-buttonR, .prev-buttonF, .next-buttonF  {
     display: flex;
->>>>>>> main
     padding: 5px 10px;
     background-color: var(--fond-de-cite);
     color: var(--color-nav-bar);
     border: none;
     cursor: pointer;
     margin: 0 5px;
-<<<<<<< HEAD
-
 }
 .skill {
     grid-column: 1 /12;
@@ -500,7 +481,6 @@ h2 {
 }
 
 .referent {
-=======
     font-size: 3rem;
 }
 
@@ -519,13 +499,11 @@ h2 {
 
 /* ----------------------formations ------------------------------------*/
 .formation {
->>>>>>> main
     text-align: center;
     font-family: var(--font-text);
     font-weight: var(--font-weight-text);
     font-size: 1.5rem;
     margin: 1rem;
-<<<<<<< HEAD
     width: 95%;
     padding: 0.5rem 0;
 }
@@ -535,7 +513,6 @@ h2 {
 
 /* -------------------media queries pour + 780 px--------------------- */
 @media screen and (min-width: 780px) {
-=======
     flex: 0 0 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -556,6 +533,8 @@ h2 {
     .navbar-mobile {
         display: none;
     }
+
+
     .description {
         grid-template-columns: 1fr 1fr;
     }
@@ -637,4 +616,3 @@ h2 {
 }
 
 
-}

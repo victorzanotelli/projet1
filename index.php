@@ -4,8 +4,6 @@
 include 'data.php';
 ?>
 <!-- ----------------------------------------------------html------------------------------------------------------ -->
->>>>>>> main
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -70,13 +68,8 @@ include 'data.php';
         </div>
 
         <!-- ---------------------------------Experience---------------------------------------------------- -->
-<<<<<<< HEAD
-<div class="experience-container">
-    <h2>EXPERIENCE</h2>
-=======
 <div class="container">
     <h2>EXPERIENCES</h2>
->>>>>>> main
     <div class="carousel">
         <?php for ($i=0; $i < (count($experience)); $i++): 
         ?>
@@ -102,8 +95,6 @@ include 'data.php';
         <i class="fa-solid fa-arrow-left prev-button"></i>
         <i class="fa-solid fa-arrow-right next-button"></i>
     </div>
-</div>
-<<<<<<< HEAD
     <!-- ---------------------------------softskills---------------------------------------------------- -->
     <h2>Soft skills</h2>
     <div class="softskills">
@@ -174,7 +165,6 @@ include 'data.php';
             <img src="assets/real_photograhClose-up_view_avocado_water_droplets_blue_background_minimalist_painting_simple_shapes_smooth_contours_seed-0ts-1695372366_idx-0.png" alt="photo d'avocat humide">
     </div>
     </main>
-=======
 <div class="containerLine">
 <div class="line2"></div>
 </div>
@@ -197,9 +187,7 @@ include 'data.php';
 </div>
 <div class="containerLine">
 <div class="line2"></div>
-</div>       
-</main>
->>>>>>> main
+</div>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
