@@ -127,6 +127,7 @@ $experience = [
             <a href="form.html"><i class="fa-solid fa-envelope" style="color: #e8e9eb;"></i></a>
         </nav>
 </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>
