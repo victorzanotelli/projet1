@@ -43,5 +43,19 @@ $formations = [
         'date' => 'FSeptembre 2015 - Juin 2018'
     ],
 ];
+$references = [
+    [
+        'referent' => 'Ben Riche',
+        'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
+    ],
+    [
+        'referent' => 'Marie Jeanne',
+        'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
+    ],
+    [
+        'referent' => 'Mr Mix-a-lot',
+        'citation' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!'
 
+    ],
+];
 ?>
