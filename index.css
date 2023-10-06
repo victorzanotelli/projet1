@@ -357,4 +357,28 @@ height: 7%;
     font-size: 200%;
     
 }
+#ancre:target {
+    opacity: 1;
+    z-index: 1;
+    color: white;
+}
 
+.tel  {
+    /*display: none;*/
+    transition: all ease 0.5s;
+    opacity: 0;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 100px;
+    font-size: 2rem;
+}
+.crox{
+    color: var(--color-nav-bar);
+    text-shadow: #E8E9EB 1px 0 10px;
+}

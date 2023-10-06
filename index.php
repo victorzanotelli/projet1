@@ -119,10 +119,12 @@ $experience = [
         <button class="next-button">Next</button>
     </div>
 </div>
+<p class="tel" id="ancre">06.02.40.27.69
+<a href="#" class="crox">X</a></p>
 </main>
 <footer>
         <nav class="navfooter">
-            <a href="#"><i class="fa-solid fa-phone" style="color: #e8e9eb;"></i></a>
+            <a href="#ancre"><i class="fa-solid fa-phone" style="color: #e8e9eb;"></i></a>
             <button class="cv" type="button"><img src="assets\cv_3135686.png" alt="icone"/></button>
             <a href="form.html"><i class="fa-solid fa-envelope" style="color: #e8e9eb;"></i></a>
         </nav>
