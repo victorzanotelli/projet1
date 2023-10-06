@@ -39,8 +39,10 @@ include 'data.php';
         </nav>
         <!-- ------------------------ infocontact ------------------------------- -->
         <div class="description">
+            <h1>ODILE DERAIE</h1>
+            <h2>Web Developpeuse</h2>
             <div class="info">
-                <p>Web develloper diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
+                <p>Web Developpeuse diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
                     création de sites web. Compétences solides en HTML, CSS, JavaScript, et PHP. Toujours à la pointe
                     des dernières tendances technologiques.
                 </p>
@@ -56,7 +58,7 @@ include 'data.php';
                 <p class="semi-title">Téléphone :</p>
                 <p>06 12 34 56 78 </p>
             </div>
-            <img class="Odile" src="./assets/visage_de_femme_pour_CV_seed-0ts-1695307229_idx-0.png" alt="photo d'odile deraie">
+            <img class="odile_picture" src="./assets/visage_de_femme_pour_CV_seed-0ts-1695307229_idx-0.png" alt="photo d'odile deraie">
             <div class="logo">
                 <a href="http://www.linkedin.fr"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="http://www.facebook.fr"><i class="fa-brands fa-facebook"></i></a>
@@ -87,16 +89,39 @@ include 'data.php';
             <?php echo $experience[$i]['whatIdo']?>
             </div>
             <button class="learnmore">En savoir plus...</button>
-            </div>
         </div>
         <?php endfor ?>
     </div>
     <div class="carousel-buttons">
-        <i class="fa-solid fa-arrow-left prev-button"></i>
-        <i class="fa-solid fa-arrow-right next-button"></i>
+        <i class="fa-solid fa-circle prev-button"></i>
+        <i class="fa-solid fa-circle next-button"></i>
     </div>
+</div>
+    <div class="containerLine">
+    <div class="line2"></div>
+    </div>
+    <!-- ---------------------------------------------Formation--------------------------------------------------------------- -->
+    <div class="container">
+    <h2>FORMATIONS</h2>
+    <div class="carousel">
+        <?php foreach($formations as $key) {?>
+        <div class="formation">
+            <div class="job"><?php echo $key['title'] ?></div>
+            <div class="companyCity"><?php echo $key['school'] . ' | ' . $key['city'] ?></div>
+            <div class="date"><?php echo $key['date'] ?></div>
+            </div>
+        <?php } ?>
+    </div>
+    <div class="carousel-buttons">
+        <i class="fa-solid fa-circle prev-buttonF"></i>
+        <i class="fa-solid fa-circle next-buttonF"></i>
+    </div>
+</div>
+<div class="containerLine">
+    <div class="line2"></div>
+</div>
     <!-- ---------------------------------softskills---------------------------------------------------- -->
-    <h2>Soft skills</h2>
+    <h2>SOFT SKILLS</h2>
     <div class="softskills">
         <div id="Gestion" class="skill">Gestion du temps</div>
         <div id="Curiosité" class="skill">Curiosité</div>
@@ -131,6 +156,9 @@ include 'data.php';
             <div class="b45"></div>
         </div>
     </div>
+    <div class="containerLine">
+    <div class="line2"></div>
+    </div>
     <!-- ---------------------------------Références---------------------------------------------------- -->
 
     <div class="container">
@@ -138,20 +166,21 @@ include 'data.php';
             <div class="carousel">
         <?php for ($i=0; $i < (count($references)); $i++): ?>
                 <div class="references">
-            <div class="referent">
+                <div class="referent">
                 <?php echo $references[$i]['referent']?>
-            </div>
-            <div class="citation">
-                <?php echo $references[$i]['citation']?>
-            </div>
                 </div>
-        </div>
+                <div class="citation">
+                <?php echo $references[$i]['citation']?>
+                </div>
+                </div>
 <?php endfor?>
+            <div class="carousel-buttons">
+                <i class="fa-solid fa-circle prev-buttonR"></i>
+                <i class="fa-solid fa-circle next-buttonR"></i>
+            </div>
+        </div>
     </div>
-    <div class="carousel-buttons">
-        <button class="prev-buttonR">Previous</button>
-        <button class="next-buttonR">Next</button>
-    </div>
+    
     <!-- ---------------------------------Portfolio---------------------------------------------------- -->
 <h2>PORTFOLIO</h2>
         <div class="slider-container">
@@ -188,29 +217,7 @@ include 'data.php';
 
         </div>
     </main>
-<div class="containerLine">
-<div class="line2"></div>
-</div>
-<!-- ---------------------------------------------Formation--------------------------------------------------------------- -->
-<div class="container">
-<h2>FORMATIONS</h2>
-    <div class="carousel">
-        <?php foreach($formations as $key) {?>
-        <div class="formation">
-            <div class="job"><?php echo $key['title'] ?></div>
-            <div class="companyCity"><?php echo $key['school'] . ' | ' . $key['city'] ?></div>
-            <div class="date"><?php echo $key['date'] ?></div>
-            </div>
-        <?php } ?>
-    </div>
-    <div class="carousel-buttons">
-        <i class="fa-solid fa-arrow-left prev-buttonF"></i>
-        <i class="fa-solid fa-arrow-right next-buttonF"></i>
-    </div>
-</div>
-<div class="containerLine">
-    <div class="line2"></div>
-</div>
+
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>

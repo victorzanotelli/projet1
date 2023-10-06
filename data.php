@@ -1,14 +1,14 @@
 <?php
 $experience = [
     [
-        'job' => 'Devellopeur Web Full Stack - JS, PHP',
+        'job' => 'Developpeuse Web Full Stack - JS, PHP',
         'company' => 'CBD',
         'city' => 'Lyon, France',
         'date' => 'depuis Septembre 2022',
         'whatIdo' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eos mollitia temporibus, autem in expedita. Delectus magnam eos molestias illo quaerat. Amet enim doloribus non!',
     ],
     [
-        'job' => 'Devellopeur Web Front-End Senior - JS',
+        'job' => 'Developpeuse Web Front-End Senior - JS',
         'company' => 'MOF',
         'city' => 'Lyon, France',
         'date' => 'Février 2021 - Septembre 2022',
@@ -40,7 +40,7 @@ $formations = [
         'title' => 'Bachelor Commerce International',
         'school' => 'IDRAC',
         'city' => 'Lyon | France',
-        'date' => 'FSeptembre 2015 - Juin 2018'
+        'date' => 'Septembre 2015 - Juin 2018'
     ],
 ];
 $references = [
