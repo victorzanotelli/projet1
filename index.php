@@ -38,14 +38,14 @@ $experience = [
 <body>
     <main>
                 <!----------------------------navbar-dekstop-------------------->
-                
         <nav class="navbar-dekstop">
             <a href="#">Informations</a>
             <a href="#experience">Experiences</a>
             <a href="#">Formations</a>
             <a href="#">Soft Skills</a>
             <a href="#">Références</a>
-            <a href="#">Portofolio</a>
+            <a href="#">Portofolio</a> 
+            <button class="recrute">Recrutez-moi</button>
         </nav>
         <!----------------------------navbar-mobile-------------------->
         <nav class="navbar-mobile">
