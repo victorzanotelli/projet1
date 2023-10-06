@@ -3,13 +3,14 @@
 
 :root {
     --fond-de-cite: #E8E9EB;
-    --font-title: 'Roboto Slab', serif;
-    --font-text: 'Roboto Slab', sans-serif;
+    --font-title: Verdana, Geneva, Tahoma, sans-serif;
+    --font-text: Verdana, Geneva, Tahoma, sans-serif;
     --color-size-text: 1rem;
     --color-font: #000000ef;
     --color-nav-bar: #3460B1;
     --font-weight-title: 600;
     --font-weight-text: 400;
+    
 }
 
 * {
@@ -43,6 +44,7 @@ body {
 .recrute {
     border:solid;
     text-shadow: #E8E9EB 1px 0 10px;
+    
 }
 /*----------------------------navbar-mobile------------------------------------*/
 .navbar-mobile{
