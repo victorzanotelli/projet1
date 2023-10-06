@@ -341,11 +341,16 @@ h2 {
 
 }
 .navfooter {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--color-nav-bar);
-    text-align: center;
+    position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--color-nav-bar);
+        text-align: center;
+        z-index: 100;
 }
 .cv{
 border-radius: 50%;
@@ -360,7 +365,7 @@ height: 7%;
 #ancre:target {
     opacity: 1;
     z-index: 1;
-    color: white;
+    color: var(--fond-de-cite);
 }
 
 .tel  {
