@@ -2,6 +2,7 @@
 
 $name = $_POST['name'];
 $email = $_POST['email'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
 ?>
 
@@ -17,14 +18,19 @@ $message = $_POST['message'];
 </head>
 <body>
     <div>
-        <h1>Formlaire de contact</h1>
+
+        <h1><?php
+        echo "Merci " .$name .'<br>' ." votre message a bien été envoyé." .'<br>' ."Ci-dessous, un recapitulatif de vos informations";
+        ?></h1>
+        
         <ul>
             <li>Votre nom : <span ><?= htmlentities($name) ?></span></li>
             <li>Votre Email: <span ><?= htmlentities($email) ?></span></li>
-            <li>Votre message : <span ><?= htmlentities($message) ?></span></li>
+            <li>Votre Telephone: <span ><?= htmlentities($phone) ?></span></li>
+            <li>Votre message : <span ><br><?= htmlentities($message) ?></span></li>
         </ul>
 
-        <h2>Merci ! Votre message a bien été envoyé </h2>
+        
     </div>
 
 </body>

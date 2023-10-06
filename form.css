@@ -11,6 +11,7 @@ body{
 *{
     font-family: 'Roboto Slab', sans-serif;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .formulaire{
@@ -18,4 +19,8 @@ body{
     flex-direction: column;
     align-items: center;
     
+}
+div{
+    
+    text-align: center;
 }
