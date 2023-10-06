@@ -19,30 +19,32 @@ include 'data.php';
                 <!----------------------------navbar-dekstop-------------------->
         <nav class="navbar-dekstop">
             <a href="#">Informations</a>
-            <a href="#">Experiences</a>
-            <a href="#">Formations</a>
-            <a href="#">Soft Skills</a>
-            <a href="#">Références</a>
-            <a href="#">Portofolio</a>
+            <a href="#experience">Experiences</a>
+            <a href="#formations">Formations</a>
+            <a href="#softskills">Soft Skills</a>
+            <a href="#references">Références</a>
+            <a href="#portofolio">Portofolio</a> 
+            <a href="form.html" class="recrute">Recrutez-moi</a>
         </nav>
         <!----------------------------navbar-mobile-------------------->
         <nav class="navbar-mobile">
+            <h1 class="odile">Odile Deraie<p>web developpeuse</p></h1>
             <i class="fa-solid fa-bars"></i>
             <div class="nav-list-mobile">
-                <a href="#">Informations</a>
-                <a href="#">Experiences</a>
-                <a href="#">Formations</a>
-                <a href="#">Soft Skills</a>
-                <a href="#">Références</a>
-                <a href="#">Portofolio</a>
+                <a href="#inform">Informations</a>
+                <a href="#experience">Experiences</a>
+                <a href="#formations">Formations</a>
+                <a href="#softskills">Soft Skills</a>
+                <a href="#references">Références</a>
+                <a href="#portofolio">Portofolio</a>
             </div>
         </nav>
         <!-- ------------------------ infocontact ------------------------------- -->
         <div class="description">
             <h1>ODILE DERAIE</h1>
             <h2>Web Developpeuse</h2>
-            <div class="info">
-                <p>Web Developpeuse diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
+            <div class="info" id="inform">
+                <p><br><br>Web Developpeuse diplomée de la Wild Code School, passionnée avec 3 années d'expérience dans la
                     création de sites web. Compétences solides en HTML, CSS, JavaScript, et PHP. Toujours à la pointe
                     des dernières tendances technologiques.
                 </p>
@@ -71,7 +73,7 @@ include 'data.php';
 
         <!-- ---------------------------------Experience---------------------------------------------------- -->
 <div class="container">
-    <h2>EXPERIENCES</h2>
+    <h2 id="experience">EXPERIENCE</h2>
     <div class="carousel">
         <?php for ($i=0; $i < (count($experience)); $i++): 
         ?>
@@ -102,7 +104,7 @@ include 'data.php';
     </div>
     <!-- ---------------------------------------------Formation--------------------------------------------------------------- -->
     <div class="container">
-    <h2>FORMATIONS</h2>
+    <h2 id="formations">FORMATIONS</h2>
     <div class="carousel">
         <?php foreach($formations as $key) {?>
         <div class="formation">
@@ -121,7 +123,7 @@ include 'data.php';
     <div class="line2"></div>
 </div>
     <!-- ---------------------------------softskills---------------------------------------------------- -->
-    <h2>SOFT SKILLS</h2>
+    <h2 id="softskills">SOFT SKILLS</h2>
     <div class="softskills">
         <div id="Gestion" class="skill">Gestion du temps</div>
         <div id="Curiosité" class="skill">Curiosité</div>
@@ -162,7 +164,7 @@ include 'data.php';
     <!-- ---------------------------------Références---------------------------------------------------- -->
 
     <div class="container">
-        <h2>REFERENCES</h2>
+        <h2 id="references">REFERENCES</h2>
             <div class="carousel">
         <?php for ($i=0; $i < (count($references)); $i++): ?>
                 <div class="references">
@@ -182,7 +184,7 @@ include 'data.php';
     </div>
     
     <!-- ---------------------------------Portfolio---------------------------------------------------- -->
-<h2>PORTFOLIO</h2>
+<h2 id="portofolio">PORTFOLIO</h2>
         <div class="slider-container">
             <div class="menu">
                 <label for="slide-dot-1"></label>
@@ -216,8 +218,17 @@ include 'data.php';
             </figure>
 
         </div>
+        <br><br><br>
     </main>
-
+<p class="tel" id="ancre">06.02.40.27.69
+<a href="#" class="crox">X</a></p>
+<footer>
+        <nav class="navfooter">
+            <a href="#ancre"><i class="fa-solid fa-phone" style="color: #e8e9eb;"></i></a>
+            <a class="cv" href="form.html"><img src="assets\cv_3135686.png" alt="icone"/></a>
+            <a href="form.html"><i class="fa-solid fa-envelope" style="color: #e8e9eb;"></i></a>
+        </nav>
+</footer>
 </body>
 <script src="https://kit.fontawesome.com/72de8a1f72.js" crossorigin="anonymous"></script>
 <script src="index.js"></script>

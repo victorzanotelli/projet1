@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Odile Deraie</title>
+</head>
+
+<body>
+    <form action="/form.php" method="post" class="formulaire">
+        <h1 class="text-center">Formulaire de contact</h1>
+
+        <p>
+            <label for="name" class="form-label">Votre Nom : </label>
+            <input type="text" id="name" name="name" >
+        </p>
+
+        <p>
+            <label for="contact">Votre Email : </label>
+            <input type="email" id="contact" name="email"  required/>
+        </p>
+        <p>
+            <label for="phone">Telephone:</label>
+            <input type="tel" id="phone" name="phone" required />
+        </p>
+
+        <p>
+            <label for="message">Votre message:</label><br>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <br><br>
+            <input type="submit">
+            </form>
+        </p>
+
+    </form>
+
+</body>
+
+</html>
